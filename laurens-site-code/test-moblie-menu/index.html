@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Avenue Fashion Client Sign Up</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="top">
+    <header></header>
+    <div>
+      <nav class="site-nav">
+        <ul class="icon-view allcaps bold dark-black">
+          <li class="avenue-brand">
+            <h1>Avenue<span class="thin"> Fashion</span></h1>
+          </li>
+          <li>
+            <img
+              id="mobile-menu-button"
+              class="menu-icon top-menu-svg"
+              src="img/menu.svg"
+              alt="three horizontal lines"
+            />
+            <ul class="list-view">
+              <li class="aquaHighlight">mens</li>
+              <li><a href="#">womens</a></li>
+              <li><a href="#">the brand</a></li>
+              <li><a href="#">local stores</a></li>
+              <li><a href="#">look book</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- sub menu display on click -->
+      <aside id="menu-panel" class="menu-panel">
+        <ul class="mobile-links capitalize">
+          <!-- #id to element you want the link to go to -->
+          <li class="mobile-link"><a href="#summary">skills summary</a></li>
+          <li class="mobile-link"><a href="#find-me">find me</a></li>
+          <li class="mobile-link"><a href="#education">education</a></li>
+          <li class="mobile-link"><a href="#work">work experience</a></li>
+          <li class="mobile-link"><a href="#contact">contact</a></li>
+        </ul>
+      </aside>
+    </div>
+    <section class="map-section">
+      <h2>google map demo</h2>
+      <div id="map"></div>
+    </section>
+
+    <script async src="js/libs/gsap/TweenMax.min.js"></script>
+    <script async src="js/libs/gsap/plugins/ScrollToPlugin.min.js"></script>
+    <script async src="js/index.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4VV7Kljvx7U-L3AHUS7hG8Myk1qtj3Y&callback=initMap"
+    ></script>
+  </body>
+</html>

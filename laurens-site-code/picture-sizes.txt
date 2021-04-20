@@ -1,0 +1,20 @@
+
+
+bw-lauren-400
+370 X 247 = 91,390
+
+
+bw-lauren-700
+670X447
+
+bw-lauren-1200
+default image !
+1102X735.6 = 810,631.2
+
+11.25%
+
+
+
+        <source srcset="lauren-sean-dogs-sm.webp" media="(min-width: 400px)" />
+        <source srcset="lauren-sean-dogs-md.webp" media="(min-width: 700px)" />
+        <source srcset="lauren-sean-dogs.webp" media="(min-width: 1200px)" />
