@@ -452,6 +452,7 @@ footer img {
 @media (min-width: 992px) {
   .head-img {
     background: url(/img/wide-location-town.webp);
+    background-size: cover;
     height: 36.6rem;
     padding-top: 6rem;
     margin-bottom: 3rem;
