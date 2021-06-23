@@ -937,3 +937,31 @@ footer img {
 .contact-spacing {
   padding-top: 6rem;
 }
+
+/* hotel cards */
+
+.card {
+  background-color: #d3d1d1;
+  padding-top: 2rem;
+  text-align: left;
+  max-width: 25rem;
+}
+
+
+
+.card-list li,
+.card h3 {
+  padding-left: 2rem;
+}
+
+ul .card-img {
+  padding-left: 0rem;
+}
+
+.card .line {
+  margin-left: 2rem;
+}
+
+.card-list{
+
+}

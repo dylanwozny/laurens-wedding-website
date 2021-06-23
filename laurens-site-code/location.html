@@ -117,6 +117,31 @@
           neque iste quas repudiandae iure rerum nesciunt.
         </p>
       </div>
+      <div class="card">
+        <h3>${element.name}</h3>
+        <div class="line"></div>
+        <ul class="card-list">
+          <li class="card-star">
+            <p>Star Rating: ${element.starRating}</p>
+          </li>
+          <li class="card-price">
+            <p>Price: ${element.ratePlan.price.current}</p>
+          </li>
+          <li class="card-img">
+            <img
+              src="${element.optimizedThumbUrls.srpDesktop}"
+              alt="Girl in a
+            jacket"
+            />
+          </li>
+          <li>
+            Hotel address:<br />
+            Street: ${element.address.streetAddress} Postal Code:
+            ${element.address.postalCode}
+          </li>
+          <li>Guest Reviews: ${element.guestReviews.rating}</li>
+        </ul>
+      </div>
       <div class="location-image-container">
         <h3>Hotel Name</h3>
         <ul>
