@@ -125,7 +125,7 @@
             <p>Star Rating: ${element.starRating}</p>
           </li>
           <li class="card-price">
-            <p>Price: ${element.ratePlan.price.current}</p>
+            <p>Price:${element.ratePlan.price.current}</p>
           </li>
           <li class="card-img">
             <img
@@ -134,12 +134,15 @@
             jacket"
             />
           </li>
-          <li>
-            Hotel address:<br />
-            Street: ${element.address.streetAddress} Postal Code:
-            ${element.address.postalCode}
+          <li class="card-address">
+            <h5>Hotel address</h5>
+            <p>Street: ${element.address.streetAddress}</p>
+            <p>Postal Code:${element.address.postalCode}</p>
           </li>
-          <li>Guest Reviews: ${element.guestReviews.rating}</li>
+          <li class="card-review">
+            <h5>Guest Reviews</h5>
+            <p>${element.guestReviews.rating}</p>
+          </li>
         </ul>
       </div>
       <div class="location-image-container">

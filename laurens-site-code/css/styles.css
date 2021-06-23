@@ -159,7 +159,8 @@ p {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   text-transform: capitalize;
   line-height: 1.15;
   margin: 0 auto;
@@ -201,6 +202,11 @@ h4 {
   color: #4a939c;
   margin-bottom: 1.5rem;
   font-weight: 600;
+}
+
+h5 {
+  margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 nav,
@@ -945,23 +951,55 @@ footer img {
   padding-top: 2rem;
   text-align: left;
   max-width: 25rem;
+  box-shadow: 0 0 20px rgba(146, 144, 144, 0.8);
+  background-color: #f4f4f4;
 }
 
+.card:hover {
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+  /* cursor: pointer; */
+}
 
+.card-star{
+  padding: 1rem 0rem;
+}
+
+.card p {
+  display: inline-block;
+  margin-bottom: 0rem;
+  line-height: 1.5;
+}
 
 .card-list li,
 .card h3 {
   padding-left: 2rem;
+  margin-bottom: 1rem;;
 }
 
 ul .card-img {
   padding-left: 0rem;
+  margin-bottom: 1rem;
 }
 
 .card .line {
   margin-left: 2rem;
 }
 
-.card-list{
+.card-price {
+  background-color: #4a939c;
+  color: #f4f4f4;
+  padding: 1rem 0rem;
+}
 
+.card-price p {
+  font-size: 1.953em;
+  font-weight: 600;
+}
+
+.card-address p {
+  margin-bottom: 1rem;
+}
+
+.card-review {
+  color: #284760;
 }
