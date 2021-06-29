@@ -368,7 +368,12 @@ footer img {
 /* --------------------------LOCATION--------------------------- */
 /* --------------------------LOCATION--------------------------- */
 /* --------------------------LOCATION--------------------------- */
-
+.line-center-small {
+  width: 10rem;
+  border-bottom: black 0.05rem solid;
+  margin: 0 auto;
+  margin-bottom: 1.45rem;
+}
 .img-size {
   vertical-align: bottom;
 }
@@ -944,23 +949,30 @@ footer img {
   padding-top: 6rem;
 }
 
-/* hotel cards */
+/*------------------ hotel cards -----------------*/
+
+.location-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
 .card {
   background-color: #d3d1d1;
   padding-top: 2rem;
   text-align: left;
-  max-width: 25rem;
   box-shadow: 0 0 20px rgba(146, 144, 144, 0.8);
   background-color: #f4f4f4;
+  word-break: break-all;
+  flex: 1 1 18.5rem;
 }
 
 .card:hover {
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 0 0px rgba(0, 0, 0, 0.8); */
   /* cursor: pointer; */
 }
 
-.card-star{
+.card-star {
   padding: 1rem 0rem;
 }
 
@@ -968,12 +980,14 @@ footer img {
   display: inline-block;
   margin-bottom: 0rem;
   line-height: 1.5;
+  padding-right: 1rem;
 }
 
 .card-list li,
 .card h3 {
-  padding-left: 2rem;
-  margin-bottom: 1rem;;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 ul .card-img {
@@ -1003,3 +1017,5 @@ ul .card-img {
 .card-review {
   color: #284760;
 }
+
+/* 653px */
