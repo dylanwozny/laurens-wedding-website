@@ -193,7 +193,6 @@ h2 {
 h3 {
   font-size: 1.953em;
   margin-bottom: 1.5rem;
-  line-height: 1.5rem;
 }
 
 h4 {
@@ -207,6 +206,7 @@ h4 {
 h5 {
   margin-bottom: 1rem;
   font-weight: 800;
+  font-family: "Gothic A1";
 }
 
 nav,
@@ -963,7 +963,6 @@ footer img {
   text-align: left;
   box-shadow: 0 0 20px rgba(146, 144, 144, 0.8);
   background-color: #f4f4f4;
-  word-break: break-all;
   flex: 1 1 18.5rem;
 }
 
@@ -983,20 +982,23 @@ footer img {
   padding-right: 1rem;
 }
 
-.card-list li,
 .card h3 {
   padding-left: 1rem;
   margin-bottom: 1rem;
   padding-right: 1rem;
 }
 
+.card-list li {
+}
+
 ul .card-img {
   padding-left: 0rem;
   margin-bottom: 1rem;
+  padding-right: 0rem;
 }
 
 .card .line {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .card-price {
@@ -1014,8 +1016,13 @@ ul .card-img {
   margin-bottom: 1rem;
 }
 
+.card-address {
+  margin-bottom: 2rem;
+}
+
 .card-review {
   color: #284760;
+  margin-bottom: 2rem;
 }
 
 /* 653px */
