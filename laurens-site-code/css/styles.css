@@ -896,6 +896,7 @@ footer img {
   padding: 2rem 0;
   background-color: #e7e7e7;
   z-index: 5;
+  transition: 0.5s;
 }
 
 /*  Menu Panel Option Styles */
@@ -1036,3 +1037,23 @@ ul .card-img {
 }
 
 /* 653px */
+
+/* mobile menu */
+
+/* .show-mobile-menu {
+  top: -6rem;
+  left: 50rem;
+  transition: 0.5s;
+} */
+
+.show-mobile-menu {
+  top: 6rem;
+  left: 0rem;
+  transition: 0.5s;
+}
+
+.hide-mobile-menu {
+  top: -6rem;
+  left: 0rem;
+  transition: 0.5s;
+}
