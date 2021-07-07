@@ -83,7 +83,7 @@
 /* global settings */
 /* will become responsive once you change this with media queries! */
 html {
-  font-size: 14px;
+  font-size: 112.5%;
   background-color: #fafafa;
   color: #383838;
   width: 100%;
@@ -154,6 +154,7 @@ p {
   line-height: 3rem;
   margin: 0 auto 1.5rem auto;
   max-width: 35rem;
+  min-width: 15rem;
 }
 
 h1,
@@ -162,28 +163,34 @@ h3,
 h4,
 h5 {
   text-transform: capitalize;
-  line-height: 1.15;
+  line-height: 1.3;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
 
 h1 {
-  font-size: 3.05rem;
-  line-height: 4.5rem;
+  /* font-size: 3.05rem; */
+  /* line-height: 4.5rem; */
+}
+
+/* --------------fluid typo---------------- */
+/* base 18px */
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.441rem, 7vw, 3.052rem);
 }
 
 h2 {
-  font-size: 2.441em;
-  line-height: 5rem;
+  font-size: clamp(1.953rem, 4vw, 2.441em);
+  line-height: 1.3;
   font-weight: 600;
   letter-spacing: 5px;
-  /* font-family: "Gothic A1"; */
-  /* color: #577882; */
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  /* font-family: "Gothic A1"; */
-  /* maybe 400 ? */
-  /* gotta diffrentiate...size,color,location,proximity */
 }
 
 .capitalize {
@@ -191,12 +198,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.953em;
+  font-size: clamp(1.563rem, 3vw, 1.953rem);
   margin-bottom: 1.5rem;
 }
 
 h4 {
-  font-size: 1.563em;
+  font-size: clamp(1.25rem, 4vw, 1.563);
   line-height: 1.5rem;
   color: #4a939c;
   margin-bottom: 1.5rem;
@@ -204,6 +211,7 @@ h4 {
 }
 
 h5 {
+  font-size: clamp(1rem, 7vw, 1.25rem);
   margin-bottom: 1rem;
   font-weight: 800;
   font-family: "Gothic A1";
@@ -502,8 +510,8 @@ footer img {
 .flex-p {
   display: flex;
   justify-content: space-around;
-  width: 75%;
   margin: 0 auto;
+  max-width: 100rem;
 }
 
 .location-text-container h3 {
@@ -527,6 +535,8 @@ footer img {
 
 .flex-p p {
   margin: 0;
+  min-width: 0rem;
+  width: 45%;
 }
 
 .location-text-container .no-margin {
@@ -653,10 +663,6 @@ footer img {
 }
 
 @media (min-width: 780px) {
-  html {
-    font-size: 16px;
-  }
-
   .flex-1 {
     flex: 33%;
   }
@@ -715,10 +721,6 @@ footer img {
 }
 
 @media (min-width: 992px) {
-  html {
-    font-size: 18px;
-  }
-
   .header-text {
     display: block;
   }
@@ -767,11 +769,32 @@ footer img {
 .list-view {
   display: none;
 }
+/* -------------------- */
+.navbar-logo {
+  display: block;
+  padding-right: 1rem;
+}
+
+.navbar-box-logo {
+  display: flex;
+  align-items: end;
+  line-height: 1.2;
+}
+
+.navbar-box-logo img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+}
 
 @media (min-width: 992px) {
   .menu-icon {
     display: none;
   }
+
+  .navbar-box-logo {
+    display: none;
+  }
+
   .list-view {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -839,6 +862,7 @@ footer img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0rem 0rem;
 }
 
 @media (min-width: 992px) {
