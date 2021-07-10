@@ -1,42 +1,41 @@
  
 
-window.onload = function() {
    const mobileMenuButton = document.querySelector('#mobile-menu-button')
    const mobileMenu = document.querySelector("#mobile-menu")
    let isOpen =false;
 
+   // event listener
    mobileMenuButton.addEventListener("click", onRequestMenu);
-   console.log(isOpen);
 
-   // close menu
-   function closeMenu(){
-      mobileMenu.classList.toggle("hide-mobile-menu");
-   }
-  
-   //   open on click
-   function onRequestMenu(e){
-      console.log("click");
-      mobileMenu.classList.toggle("show-mobile-menu");        
+   // toggle menu function
+   function onRequestMenu(){
+      mobileMenu.classList.toggle("show-mobile-menu");  
    }
 
-   // ----Creating logic for closing when anything else is clicked---
-   // onclick >>>>>>
-   // scrolling closes menu
-   if(mobileMenu.classList("show-mobile-menu")){
-      isOpen = true;
-      console.log(isOpen);
-
+   // close menu on scroll
+   window.onscroll = function(){
+      if(mobileMenu.classList.contains('show-mobile-menu')){
+         mobileMenu.classList.toggle("show-mobile-menu"); 
+      }
+      
    }
 
-   else{
-      isOpen = false;
-      console.log(isOpen);
+   // GOOD EXPLINATION ON THIS 
+   // https://gomakethings.com/checking-event-target-selectors-with-event-bubbling-in-vanilla-javascript/
 
-   }
+   // hide menu when mouse has been clicked outside
+   // when the mouse clicks anything other than the hamburger menu or the 
+   // mobile menu 
+   window.addEventListener('click', function(e){
+      if (!mobileMenu.contains(e.target) && (!mobileMenuButton.contains(e.target))){
+         mobileMenu.classList.remove("show-mobile-menu"); 
+    } 
+  })
+   
 
 
-   }
 
+   
 
 
 

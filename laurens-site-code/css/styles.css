@@ -239,22 +239,6 @@ header > h1 {
 
 /* 0.6 */
 
-.header-img-dogs,
-.responsive-img {
-  /* max-width: 1132.5px; 1140 */
-  /* load in smaller images when in mbolie mode ? look into */
-  width: calc(100% - 1rem);
-  vertical-align: bottom;
-  padding: 0.5rem;
-  box-shadow: 5px 5px 8px grey;
-  box-sizing: border-box;
-  margin-bottom: 1.5rem;
-}
-
-.responsive-img {
-  width: calc(75% - 0.5rem);
-}
-
 .horizontal-lines-container {
   width: calc(100% - 1rem);
   display: flex;
@@ -443,7 +427,7 @@ footer img {
     ),
     /* bottom, image */ url(/img/wide-location-town-sm.webp);
 
-  height: 19.5rem;
+  height: 15.5rem;
   padding-top: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -452,7 +436,7 @@ footer img {
   .head-img {
     background: url(/img/wide-location-town-md.webp);
 
-    height: 36.6rem;
+    height: 29.5rem;
     padding-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -461,7 +445,7 @@ footer img {
 @media (min-width: 700px) {
   .head-img {
     background: url(/img/wide-location-town-lg.webp);
-    height: 35rem;
+    height: 32rem;
     padding-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -773,12 +757,13 @@ footer img {
 .navbar-logo {
   display: block;
   padding-right: 1rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 .navbar-box-logo {
   display: flex;
-  align-items: end;
-  line-height: 1.2;
+  align-items: center;
+  line-height: 1;
 }
 
 .navbar-box-logo img {
@@ -898,14 +883,14 @@ footer img {
   .site-nav {
     position: static;
     z-index: none;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
     border-bottom: none;
     background: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
     color: inherit;
     max-width: 1122px;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 }
 
@@ -940,17 +925,18 @@ footer img {
 }
 
 .mobile-link {
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 2rem;
-  height: 3rem;
-  width: 100%;
+  width: 50%;
 }
 
 .mobile-link a {
   padding-bottom: 0.2rem;
+  display: block;
+  border-bottom: solid 1px #e7e7e7;
 }
 
 .mobile-link a,
@@ -1060,18 +1046,8 @@ ul .card-img {
   padding-left: 1rem;
 }
 
-/* 653px */
-
-/* mobile menu */
-
-/* .show-mobile-menu {
-  top: -6rem;
-  left: 50rem;
-  transition: 0.5s;
-} */
-
 .show-mobile-menu {
-  top: 6rem;
+  top: 5.5rem;
   left: 0rem;
   transition: 0.5s;
 }
@@ -1081,3 +1057,50 @@ ul .card-img {
   left: 0rem;
   transition: 0.5s;
 }
+
+/* -------------------------------------- */
+/* aspect ratio .navbar-box-logo */
+/* -------------------------------------- */
+
+/*  1 Divide width by height
+    2 take decimal number and divide by / 10
+    3 padding-top: calc(6.6 / 10 * 100%); "decimal was 0.663"
+    4 add in the rest of code below !
+    
+  */
+
+/* global aspect ratio settings */
+.aspect-ratio-box {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.aspect-ratio-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* individual picture settings */
+
+.aspect-ratio-box.header-img-dogs {
+  box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.4);
+  padding-top: calc(6.6 / 10 * 100%);
+}
+/* -------------------------------------- */
+
+.aspect-ratio-box.img-bw {
+  box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.4);
+  padding-top: calc(6.6 / 10 * 100%);
+}
+
+/* container is needed on div encompassing picture element to control the max -size of image ! */
+.bw-container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+/* -------------------------------------- */

@@ -46,7 +46,7 @@
           <li class="navbar-box-logo">
             <img src="img/SVG/splash-logo.svg" alt="" />
             <div class="navbar-logo">Lauren + Sean</div>
-        </li>  
+          </li>
         </ul>
       </nav>
       <!-- sub menu display on click -->
@@ -59,6 +59,7 @@
           <li class="mobile-link"><a href="/Contact.html">Contact</a></li>
         </ul>
       </aside>
+
       <picture>
         <source
           srcset="img/lauren-sean-dogs-sm.webp"
@@ -69,14 +70,16 @@
           media="(max-width: 700px)"
         />
         <!-- <source
-          srcset="img/lauren-sean-dogs-md.webp"
-          media="(max-width: 996px)"
-        /> -->
-        <img
-          class="header-img-dogs"
-          src="img/lauren-sean-dogs.webp"
-          alt="Lauren and Sean with dogs"
-        />
+            srcset="img/lauren-sean-dogs-md.webp"
+            media="(max-width: 996px)"
+          /> -->
+        <div class="aspect-ratio-box header-img-dogs">
+          <img
+            class=""
+            src="img/lauren-sean-dogs.webp"
+            alt="Lauren and Sean with dogs"
+          />
+        </div>
       </picture>
     </header>
     <div class="date-area">
@@ -90,21 +93,25 @@
     </div>
     <section>
       <h2 class="capitalize">Our Story</h2>
-      <picture>
-        <source
-          srcset="img/bw-sean-lauren-sm.webp"
-          media="(max-width: 400px)"
-        />
-        <source
-          srcset="img/bw-sean-lauren-md.webp"
-          media="(max-width: 700px)"
-        />
-        <img
-          class="responsive-img"
-          src="img/bw-sean-lauren.webp"
-          alt="Lauren and Sean B+W"
-        />
-      </picture>
+      <div class="bw-container">
+        <picture>
+          <source
+            srcset="img/bw-sean-lauren-sm.webp"
+            media="(max-width: 400px)"
+          />
+          <source
+            srcset="img/bw-sean-lauren-md.webp"
+            media="(max-width: 700px)"
+          />
+          <div class="aspect-ratio-box img-bw">
+            <img
+              class="responsive-img"
+              src="img/bw-sean-lauren.webp"
+              alt="Lauren and Sean B+W"
+            />
+          </div>
+        </picture>
+      </div>
 
       <p class="wide-txt">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quisquam
