@@ -89,6 +89,9 @@ html {
   background-color: #fafafa;
   color: #383838;
   width: 100%;
+  /*--------------- baseline grid ----------*/
+  background-image: linear-gradient(#0ff 1px, transparent 1px);
+  background-size: auto 1.5rem;
 }
 
 body {
@@ -153,11 +156,13 @@ img {
 }
 
 p {
-  line-height: 3rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .wide-txt {
-  margin: 0 auto 1.5rem auto;
+  margin: 1.5rem auto 1.5rem auto;
   max-width: calc(75% - 0.5rem);
 }
 
@@ -184,15 +189,21 @@ p {
   font-size: 1rem;
 }
 
+/* footer spacing */
+.p-bottom {
+  margin-bottom: 3rem;
+}
+
 h1 {
   font-size: clamp(2.441rem, 7vw, 3.052rem);
+  line-height: 1.23;
 }
 
 h2 {
   font-size: clamp(1.953rem, 4vw, 2.441em);
-  line-height: 1.3;
+  line-height: 1.54;
   font-weight: 600;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
@@ -204,6 +215,9 @@ h2 {
 h3 {
   font-size: clamp(1.563rem, 3vw, 1.953rem);
   margin-bottom: 1.5rem;
+  line-height: 2.88;
+  display: inline-block;
+  border-bottom: 1px solid black;
 }
 
 h4 {
@@ -336,7 +350,7 @@ nav ul {
 footer {
   border-top: solid 2px #4a939c;
   width: 100%;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 .footer-list-container {
@@ -393,7 +407,7 @@ footer {
 .header-span-parent {
   max-width: 100%;
   width: 100%;
-  margin-top: 5.15rem;
+  margin-top: 4.5rem;
 }
 
 @media (min-width: 780px) {
@@ -821,10 +835,6 @@ footer {
   .icon-view li {
     width: 100%;
   }
-}
-
-.site-nav {
-  padding: 0.5rem 1rem;
 }
 
 .site-nav {
