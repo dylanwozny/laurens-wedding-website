@@ -30,7 +30,6 @@ getAndRenderHotel = (element) =>{
 		hotelDomList.innerHTML += 
         `<div class="card">
           <h3>${element.name}</h3>
-          <div class="line"></div>
           <ul class="card-list">
             <li class="card-star">
               <p>Star Rating: ${element.starRating}</p>
