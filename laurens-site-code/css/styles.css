@@ -90,8 +90,8 @@ html {
   color: #383838;
   width: 100%;
   /*--------------- baseline grid ----------*/
-  background-image: linear-gradient(#0ff 1px, transparent 1px);
-  background-size: auto 1.5rem;
+  /* background-image: linear-gradient(#0ff 1px, transparent 1px);
+  background-size: auto 1.5rem; */
 }
 
 body {
@@ -210,6 +210,14 @@ h2 {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+h3 {
+  font-size: clamp(1.563rem, 3vw, 1.953rem);
+  margin-bottom: calc(0.75rem - 1px);
+  line-height: 1.45;
+  display: inline-block;
+  border-bottom: 1px solid black;
 }
 
 h3 {
@@ -419,6 +427,8 @@ footer {
 @media (min-width: 992px) {
   .header-span-parent {
     margin-top: 0rem;
+    border-bottom: 1px solid #4a939c;
+    background-color: #f4f4f4;
   }
 }
 .img-size img {
@@ -631,6 +641,32 @@ footer {
 /* --------------------------------------------------------- */
 /* ---------------------Contact--------------------------- */
 /* --------------------------------------------------------- */
+
+.contact-icons {
+}
+
+.icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  gap: 3rem;
+  /* justify-content: center; */
+}
+
+.icon-item {
+  flex: 1 7.5rem;
+}
+
+.icon-item img {
+}
+
+.icon-item a {
+  display: block;
+  height: 7.5rem;
+  max-width: 7.5rem;
+  margin: 0 auto;
+}
 
 .line-center {
   max-width: calc(75% - 0.5rem);
