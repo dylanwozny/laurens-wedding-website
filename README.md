@@ -1,9 +1,13 @@
 # laurens-wedding-website
-website for laurens upcoming wedding.<br/>
-basic five page website with async calls to hotel api for dynamic pricing and locations.
+
+Website for lauren's upcoming wedding.<br/>
+Basic five page website with async calls to hotel api for dynamic pricing and locations.<br/>
+Google maps display on location page.
 
 # Tools used
-Js<br/>
-html <br/>
-sass</br>
 
+### Js<br/>
+
+### html <br/>
+
+### CSS</br>
