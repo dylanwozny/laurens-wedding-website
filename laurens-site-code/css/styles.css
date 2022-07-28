@@ -465,7 +465,7 @@ footer {
       hsla(207, 43%, 28%, 12%),
       hsla(207, 43%, 28%, 12%)
     ),
-    /* bottom, image */ url(/img/wide-location-town-sm.webp);
+    /* bottom, image */ url(../img/wide-location-town-lg.webp);
 
   height: 15.5rem;
   padding-top: 1.5rem;
@@ -474,7 +474,7 @@ footer {
 
 @media (min-width: 400px) {
   .head-img {
-    background: url(/img/wide-location-town-md.webp);
+    background: url(../img/wide-location-town-md.webp);
 
     height: 29.5rem;
     padding-top: 3rem;
@@ -484,7 +484,7 @@ footer {
 
 @media (min-width: 700px) {
   .head-img {
-    background: url(/img/wide-location-town-lg.webp);
+    background: url(../img/wide-location-town-lg.webp);
     height: 32rem;
     padding-top: 3rem;
     margin-bottom: 3rem;
@@ -493,7 +493,7 @@ footer {
 
 @media (min-width: 992px) {
   .head-img {
-    background: url(/img/wide-location-town.webp);
+    background: url(../img/wide-location-town.webp);
     background-size: cover;
     height: 36.6rem;
     padding-top: 6rem;
@@ -622,7 +622,7 @@ footer {
       hsla(207, 43%, 28%, 100%),
       hsla(207, 43%, 28%, 92%)
     ),
-    /* bottom, image */ url(/img/gift-pattern.webp);
+    /* bottom, image */ url(../img/gift-pattern.webp);
 
   color: #ececec;
 }
@@ -1016,7 +1016,7 @@ footer {
 }
 
 .hotel-container {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 /*------------------ hotel cards -----------------*/
@@ -1024,16 +1024,17 @@ footer {
 .location-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .card {
   background-color: #d3d1d1;
   padding-top: 1.5rem;
   text-align: left;
-  box-shadow: 0 0 20px rgba(146, 144, 144, 0.8);
+
   background-color: #f4f4f4;
-  flex: 1 1 15.5rem;
+  flex: 1;
   min-width: 15rem;
   max-width: 25rem;
 }
@@ -1060,11 +1061,12 @@ footer {
 
 .card h3 {
   margin-left: 1rem;
-  line-height: 1.9;
+  line-height: 1.5;
   margin-right: 1rem;
 }
 
-.card-list li {
+.card h5 {
+  margin-bottom: 0rem;
 }
 
 ul .card-img {
@@ -1099,7 +1101,7 @@ ul .card-img {
 }
 
 .card-address h5 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .card-review {
